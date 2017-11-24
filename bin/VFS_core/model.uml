@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Lg-fMN_DEeS4Ycz66a0WMw" name="Model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_Lg-fMd_DEeS4Ycz66a0WMw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_L9VEAN_DEeS4Ycz66a0WMw" name="VFSFile">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_LSDc8N_EEeS4Ycz66a0WMw" name="file" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EByteArray"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e-mgEN_EEeS4Ycz66a0WMw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e-nHIN_EEeS4Ycz66a0WMw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_M7kjAN_FEeS4Ycz66a0WMw" name="serialVersionUID" visibility="private" isStatic="true">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#ELong"/>
+    </ownedAttribute>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_-z6r0N_EEeS4Ycz66a0WMw" client="_L9VEAN_DEeS4Ycz66a0WMw" supplier="_rwuHsN_EEeS4Ycz66a0WMw" contract="_rwuHsN_EEeS4Ycz66a0WMw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_NDfa0N_DEeS4Ycz66a0WMw" name="FileNode">
+    <generalization xmi:type="uml:Generalization" xmi:id="_lC1I0N_DEeS4Ycz66a0WMw" general="_OChO4N_DEeS4Ycz66a0WMw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Yjg2gN_FEeS4Ycz66a0WMw" name="Attribute1" visibility="private" type="_L9VEAN_DEeS4Ycz66a0WMw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_jmhQ8N_FEeS4Ycz66a0WMw" name="serialVersionUID" visibility="private" isStatic="true">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#ELong"/>
+    </ownedAttribute>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_CDMrQN_FEeS4Ycz66a0WMw" client="_NDfa0N_DEeS4Ycz66a0WMw" supplier="_rwuHsN_EEeS4Ycz66a0WMw" contract="_rwuHsN_EEeS4Ycz66a0WMw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_OChO4N_DEeS4Ycz66a0WMw" name="Node">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_sGoQ0N_FEeS4Ycz66a0WMw" name="serialVersionUID" visibility="private" isStatic="true">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#ELong"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_DtGy4N_GEeS4Ycz66a0WMw" name="name" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_hdtU4N_GEeS4Ycz66a0WMw" name="parentDirectory" visibility="private" type="_O1XoIN_DEeS4Ycz66a0WMw"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_CtrysN_FEeS4Ycz66a0WMw" client="_OChO4N_DEeS4Ycz66a0WMw" supplier="_rwuHsN_EEeS4Ycz66a0WMw" contract="_rwuHsN_EEeS4Ycz66a0WMw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_O1XoIN_DEeS4Ycz66a0WMw" name="DirectoryNode">
+    <generalization xmi:type="uml:Generalization" xmi:id="_ls1vIN_DEeS4Ycz66a0WMw" general="_OChO4N_DEeS4Ycz66a0WMw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_wem9sN_FEeS4Ycz66a0WMw" name="serialVersionUID" visibility="private" isStatic="true">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#ELong"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_JV_uAN_GEeS4Ycz66a0WMw" name="sonNodes" visibility="public" type="_OChO4N_DEeS4Ycz66a0WMw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bq0wQN_GEeS4Ycz66a0WMw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bq0wQd_GEeS4Ycz66a0WMw" value="*"/>
+    </ownedAttribute>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_FGYvcN_FEeS4Ycz66a0WMw" client="_O1XoIN_DEeS4Ycz66a0WMw" supplier="_rwuHsN_EEeS4Ycz66a0WMw" contract="_rwuHsN_EEeS4Ycz66a0WMw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_QbAwQN_DEeS4Ycz66a0WMw" name="VirtualDisc">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_zrS8IN_FEeS4Ycz66a0WMw" name="serialVersionUID" visibility="private" isStatic="true">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#ELong"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_27KU8N_GEeS4Ycz66a0WMw" name="name" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_7ggIYN_GEeS4Ycz66a0WMw" name="size" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_I1o9gN_HEeS4Ycz66a0WMw" name="pathName" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Nhir8N_HEeS4Ycz66a0WMw" name="root" type="_O1XoIN_DEeS4Ycz66a0WMw"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_DYwI8N_FEeS4Ycz66a0WMw" client="_QbAwQN_DEeS4Ycz66a0WMw" supplier="_rwuHsN_EEeS4Ycz66a0WMw" contract="_rwuHsN_EEeS4Ycz66a0WMw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_RY_bcN_DEeS4Ycz66a0WMw" name="VFS_app"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dERW0N_DEeS4Ycz66a0WMw" memberEnd="_dERW0d_DEeS4Ycz66a0WMw _dEQvwN_DEeS4Ycz66a0WMw" navigableOwnedEnd="_dEQvwN_DEeS4Ycz66a0WMw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_dERW0d_DEeS4Ycz66a0WMw" name="virtualDisc" type="_QbAwQN_DEeS4Ycz66a0WMw" association="_dERW0N_DEeS4Ycz66a0WMw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dERW0t_DEeS4Ycz66a0WMw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dERW09_DEeS4Ycz66a0WMw" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_dEQvwN_DEeS4Ycz66a0WMw" name="vFS_app" type="_RY_bcN_DEeS4Ycz66a0WMw" association="_dERW0N_DEeS4Ycz66a0WMw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dEQvwd_DEeS4Ycz66a0WMw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dEQvwt_DEeS4Ycz66a0WMw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_giDFQN_DEeS4Ycz66a0WMw" visibility="package" memberEnd="_giDFQd_DEeS4Ycz66a0WMw _giCeMN_DEeS4Ycz66a0WMw" navigableOwnedEnd="_giCeMN_DEeS4Ycz66a0WMw _giDFQd_DEeS4Ycz66a0WMw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_giDFQd_DEeS4Ycz66a0WMw" name="directoryNode" type="_O1XoIN_DEeS4Ycz66a0WMw" association="_giDFQN_DEeS4Ycz66a0WMw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_giDFQt_DEeS4Ycz66a0WMw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_giDFQ9_DEeS4Ycz66a0WMw" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_giCeMN_DEeS4Ycz66a0WMw" name="directoryNode" type="_O1XoIN_DEeS4Ycz66a0WMw" association="_giDFQN_DEeS4Ycz66a0WMw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_giCeMd_DEeS4Ycz66a0WMw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_giCeMt_DEeS4Ycz66a0WMw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_i4_ugN_DEeS4Ycz66a0WMw" memberEnd="_i4_ugd_DEeS4Ycz66a0WMw _i4_HcN_DEeS4Ycz66a0WMw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_i4_ugd_DEeS4Ycz66a0WMw" name="vFSFile" type="_L9VEAN_DEeS4Ycz66a0WMw" aggregation="composite" association="_i4_ugN_DEeS4Ycz66a0WMw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i4_ugt_DEeS4Ycz66a0WMw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i4_ug9_DEeS4Ycz66a0WMw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_i4_HcN_DEeS4Ycz66a0WMw" name="fileNode" type="_NDfa0N_DEeS4Ycz66a0WMw" association="_i4_ugN_DEeS4Ycz66a0WMw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i4_Hcd_DEeS4Ycz66a0WMw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i4_Hct_DEeS4Ycz66a0WMw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_mtLKw9_DEeS4Ycz66a0WMw" memberEnd="_mtLKxN_DEeS4Ycz66a0WMw _mtLKwN_DEeS4Ycz66a0WMw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_mtLKxN_DEeS4Ycz66a0WMw" name="node" type="_OChO4N_DEeS4Ycz66a0WMw" aggregation="composite" association="_mtLKw9_DEeS4Ycz66a0WMw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mtLKxd_DEeS4Ycz66a0WMw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mtLKxt_DEeS4Ycz66a0WMw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_mtLKwN_DEeS4Ycz66a0WMw" name="virtualDisc" type="_QbAwQN_DEeS4Ycz66a0WMw" association="_mtLKw9_DEeS4Ycz66a0WMw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mtLKwd_DEeS4Ycz66a0WMw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mtLKwt_DEeS4Ycz66a0WMw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_2qbRoN_DEeS4Ycz66a0WMw" memberEnd="_2qbRod_DEeS4Ycz66a0WMw _2qaqkN_DEeS4Ycz66a0WMw" navigableOwnedEnd="_2qbRod_DEeS4Ycz66a0WMw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_2qbRod_DEeS4Ycz66a0WMw" name="fileNode" type="_NDfa0N_DEeS4Ycz66a0WMw" aggregation="composite" association="_2qbRoN_DEeS4Ycz66a0WMw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2qbRot_DEeS4Ycz66a0WMw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2qbRo9_DEeS4Ycz66a0WMw" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_2qaqkN_DEeS4Ycz66a0WMw" name="directoryNode" type="_O1XoIN_DEeS4Ycz66a0WMw" association="_2qbRoN_DEeS4Ycz66a0WMw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2qaqkd_DEeS4Ycz66a0WMw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2qaqkt_DEeS4Ycz66a0WMw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_rwuHsN_EEeS4Ycz66a0WMw" name="Serializable"/>
+</uml:Model>
